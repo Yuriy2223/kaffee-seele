@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf9f6;
+  --foreground: #3b3b3b;
+  --warm-brown: #7c6440;
+  --sage-green: #9caa9c;
+  --warm-white: #faf9f6;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-warm-brown: var(--warm-brown);
+  --color-sage-green: var(--sage-green);
+  --color-warm-white: var(--warm-white);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #e8eaea;
+    --warm-brown: #7c6440;
+    --sage-green: #9caa9c;
+    --warm-white: #faf9f6;
+    --dark-text: #3b3b3b;
   }
+} */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
+  font-family: var(--font-geist-sans), sans-serif;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  outline: none;
 }
