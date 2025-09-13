@@ -11,7 +11,7 @@ export const MobileMenuButton = ({
 }: MobileMenuButtonProps) => {
   return (
     <button
-      className="md:hidden text-warm-brown"
+      className="lg:hidden text-warm-brown"
       onClick={onToggle}
       data-testid="mobile-menu-button"
     >

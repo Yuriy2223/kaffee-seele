@@ -6,6 +6,7 @@
   --warm-brown: #7c6440;
   --sage-green: #9caa9c;
   --warm-white: #faf9f6;
+  --cream: #d9c9a6;
 }
 
 @theme inline {
@@ -14,6 +15,7 @@
   --color-warm-brown: var(--warm-brown);
   --color-sage-green: var(--sage-green);
   --color-warm-white: var(--warm-white);
+  --color-cream: var(--cream);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
