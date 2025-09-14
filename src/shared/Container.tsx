@@ -12,10 +12,10 @@ export const Container: React.FC<ContainerProps> = ({
   return (
     <div
       className={clsx(
-        "w-full mx-auto max-w-[375px] px-4 border border-red-500",
-        "md:max-w-[768px] md:px-6",
-        "lg:max-w-[1024px] lg:px-6",
-        "xl:max-w-[1280px] xl:px-8",
+        "w-full mx-auto max-w-[375px] border border-red-500",
+        "md:max-w-[768px]",
+        "lg:max-w-[1024px]",
+        "xl:max-w-[1280px]",
         className
       )}
     >

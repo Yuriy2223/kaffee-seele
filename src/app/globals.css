@@ -6,7 +6,9 @@
   --warm-brown: #7c6440;
   --sage-green: #9caa9c;
   --warm-white: #faf9f6;
+  --destructive: #f53b3b;
   --cream: #d9c9a6;
+  --muted: #e0d9c9;
 }
 
 @theme inline {
@@ -15,6 +17,8 @@
   --color-warm-brown: var(--warm-brown);
   --color-sage-green: var(--sage-green);
   --color-warm-white: var(--warm-white);
+  --color-destructive: var(--destructive);
+  --color-muted: var(--muted);
   --color-cream: var(--cream);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -68,4 +72,61 @@ input,
 textarea {
   font-family: inherit;
   outline: none;
+}
+
+/* ============== кастомні анімації =============*/
+
+@layer utilities {
+  .text-shadow-lg {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-steam {
+    animation: steam 2s ease-out infinite;
+  }
+
+  .animate-fadeInHeart {
+    animation: fadeInHeart 0.8s ease-out forwards;
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes steam {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-40px) rotate(-2deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInHeart {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
