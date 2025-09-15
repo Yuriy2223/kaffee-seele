@@ -4,23 +4,25 @@ import { AtmosphereSection } from "@/components/AtmosphereSection/AtmosphereSect
 import { CoffeeBackground } from "@/shared/CoffeeBackground";
 import { OurMenu } from "@/components/OurMenu/OurMenu";
 import { About } from "@/components/About/About";
+import { Gallery } from "@/components/Gallery/Gallery";
 
 export default function Home() {
   return (
     <>
-      <CoffeeBackground
-        backgroundColor="transparent"
-        iconColor="#7c6440"
-        opacity={5}
-        size={30}
-        spacing={400}
-      />
       <Header />
       <main>
+        <CoffeeBackground
+          backgroundColor="transparent"
+          iconColor="#7c6440"
+          opacity={5}
+          size={30}
+          spacing={400}
+        />
         <Hero />
         <AtmosphereSection />
         <OurMenu />
         <About />
+        <Gallery />
       </main>
     </>
   );
