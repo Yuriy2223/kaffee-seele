@@ -13,7 +13,7 @@ export const AnimatedLogo = ({ show, showSteam }: AnimatedLogoProps) => {
       }`}
     >
       <div className="relative">
-        <div className="w-16 h-16 md:w-20 md:h-20 bg-warm-brown/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl border-2 border-white/20 transform hover:scale-110 transition-all duration-500">
+        <div className="w-16 h-16 md:w-20 md:h-20 bg-warm-brown/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl border-2 border-white/20 transform transition-all duration-500">
           <Coffee
             className="w-8 h-8 md:w-10 md:h-10 text-white"
             aria-hidden="true"
