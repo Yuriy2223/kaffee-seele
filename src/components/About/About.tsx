@@ -7,8 +7,8 @@ import { TeamCarousel } from "./TeamCarousel";
 
 export const About = () => {
   return (
-    <section id="about" className="py-10 bg-cream/10">
-      <Container className="px-4">
+    <section id="about" className="bg-cream/10">
+      <Container className="px-4 py-10">
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-4xl md:text-5xl font-bold text-warm-brown mb-8">
             Про нас
