@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero/Hero";
 import { AtmosphereSection } from "@/components/AtmosphereSection/AtmosphereSection";
 import { CoffeeBackground } from "@/shared/CoffeeBackground";
 import { OurMenu } from "@/components/OurMenu/OurMenu";
+import { About } from "@/components/About/About";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <AtmosphereSection />
         <OurMenu />
+        <About />
       </main>
     </>
   );
