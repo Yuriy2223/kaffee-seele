@@ -223,18 +223,12 @@ export const OurMenu = () => {
         </div>
 
         <div className="mt-20">
-          <h4
-            className="text-3xl font-serif font-semibold text-sage-green mb-8 text-center"
-            data-testid="barista-recommendation-title"
-          >
+          <h4 className="text-3xl font-serif font-semibold text-sage-green mb-8 text-center">
             Рекомендація бариста
           </h4>
 
           <div className="max-w-3xl mx-auto mb-16">
-            <div
-              className="bg-gradient-to-r from-warm-brown to-sage-green rounded-2xl p-8 text-center shadow-xl"
-              data-testid="barista-recommendation"
-            >
+            <div className="bg-gradient-to-r from-warm-brown to-sage-green rounded-2xl p-8 text-center shadow-xl">
               <div className="flex items-center justify-center mb-6">
                 <Image
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80"
