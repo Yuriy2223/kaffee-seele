@@ -5,6 +5,9 @@ import { CoffeeBackground } from "@/shared/CoffeeBackground";
 import { OurMenu } from "@/components/OurMenu/OurMenu";
 import { About } from "@/components/About/About";
 import { Gallery } from "@/components/Gallery/Gallery";
+import { Reviews } from "@/components/Reviews/Reviews";
+import { Footer } from "@/components/Footer/Footer";
+import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   return (
@@ -23,7 +26,21 @@ export default function Home() {
         <OurMenu />
         <About />
         <Gallery />
+        <Reviews />
       </main>
+      <Footer />
+
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </>
   );
 }
