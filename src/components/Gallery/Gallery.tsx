@@ -136,10 +136,7 @@ export const Gallery = () => {
           ))}
         </div>
 
-        <div
-          className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
-          data-testid="gallery-grid"
-        >
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {filteredImages.map((image, index) => (
             <div
               key={index}
