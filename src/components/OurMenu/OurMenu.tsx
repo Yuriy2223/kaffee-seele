@@ -1,13 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/shared/Container";
-import {
-  Coffee,
-  Heart,
-  Snowflake,
-  Star,
-  Cookie,
-  Coffee as CoffeeMug,
-} from "lucide-react";
+import { Coffee, Heart, Snowflake, Star, Cookie } from "lucide-react";
 
 const iconMap = {
   coffee: Coffee,
@@ -15,11 +8,12 @@ const iconMap = {
   snowflake: Snowflake,
   star: Star,
   cookie: Cookie,
-  mug: CoffeeMug,
+  mug: Coffee,
 };
 
 export const coffeeMenu = [
   {
+    id: "espresso",
     name: "Класичний еспресо",
     description:
       "Ідеальний баланс міцності та аромату для справжніх цінителів кави",
@@ -29,6 +23,7 @@ export const coffeeMenu = [
     icon: "coffee",
   },
   {
+    id: "cappuccino",
     name: "Капучино з мистецтвом",
     description:
       "Ніжна піна з унікальним малюнком, що робить кожну чашку особливою",
@@ -38,6 +33,7 @@ export const coffeeMenu = [
     icon: "heart",
   },
   {
+    id: "coldbrew",
     name: "Колд брю",
     description:
       "Освіжаюча холодна кава з м'яким смаком та природною солодкістю",
@@ -47,6 +43,7 @@ export const coffeeMenu = [
     icon: "snowflake",
   },
   {
+    id: "vanilla-latte",
     name: "Ванільний лате",
     description: "Кремова кава з додаванням натурального ванільного сиропу",
     price: 70,
@@ -55,6 +52,7 @@ export const coffeeMenu = [
     icon: "star",
   },
   {
+    id: "chocolate-mocha",
     name: "Шоколадна мока",
     description: "Ідеальне поєднання кави та шоколаду з вершковою піною",
     price: 75,
@@ -63,6 +61,7 @@ export const coffeeMenu = [
     icon: "cookie",
   },
   {
+    id: "americano",
     name: "Класичний американо",
     description:
       "Міцна чорна кава для тих, хто цінує простоту та автентичність",
@@ -75,6 +74,7 @@ export const coffeeMenu = [
 
 export const dessertsMenu = [
   {
+    id: "tiramisu",
     name: "Домашнє тірамісу",
     description: "За авторським рецептом нашого шеф-кондитера",
     price: 85,
@@ -82,6 +82,7 @@ export const dessertsMenu = [
       "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
   },
   {
+    id: "brownie",
     name: "Шоколадний брауні",
     description: "З горіхами та морозивом",
     price: 65,
@@ -89,6 +90,7 @@ export const dessertsMenu = [
       "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
   },
   {
+    id: "cheesecake",
     name: "Чізкейк нью-йорк",
     description: "З лісовими ягодами",
     price: 75,
@@ -96,6 +98,7 @@ export const dessertsMenu = [
       "https://images.unsplash.com/photo-1567306301408-9b74779a11af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
   },
   {
+    id: "macarons",
     name: "Французькі макарони",
     description: "Набір з 6 смаків",
     price: 90,
@@ -103,6 +106,23 @@ export const dessertsMenu = [
       "https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
   },
 ];
+
+export const baristaRecommendation = {
+  id: "caramel-macchiato",
+  barista: {
+    name: "Олександра",
+    title: "Головний баріста",
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80",
+  },
+  drink: {
+    name: "Карамельний макіато з морською сіллю",
+    description:
+      "Цей тиждень я рекомендую спробувати наш авторський карамельний макіато з щіпкою морської солі. Солодкість карамелі в поєднанні з легкою солоністю створює неймовірно збалансований смак, який підкреслює природну кислинку кави.",
+    price: 85,
+    specialOffer: "Спеціальна ціна до неділі",
+  },
+};
 
 export const OurMenu = () => {
   return (
@@ -123,11 +143,11 @@ export const OurMenu = () => {
           </h4>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {coffeeMenu.map((item, index) => {
+            {coffeeMenu.map((item) => {
               const IconComponent = iconMap[item.icon as keyof typeof iconMap];
               return (
                 <div
-                  key={index}
+                  key={item.id}
                   className="bg-warm-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="relative w-full h-48 mb-4">
@@ -135,6 +155,7 @@ export const OurMenu = () => {
                       src={item.image}
                       alt={item.name}
                       fill
+                      loading="lazy"
                       className="rounded-xl object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
@@ -161,9 +182,9 @@ export const OurMenu = () => {
           </h4>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {dessertsMenu.map((item, index) => (
+            {dessertsMenu.map((item) => (
               <div
-                key={index}
+                key={item.id}
                 className="bg-warm-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
               >
                 <div className="relative w-full h-40 mb-4">
@@ -171,6 +192,7 @@ export const OurMenu = () => {
                     src={item.image}
                     alt={item.name}
                     fill
+                    loading="lazy"
                     className="rounded-xl object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   />
@@ -198,32 +220,34 @@ export const OurMenu = () => {
             <div className="bg-gradient-to-r from-warm-brown to-sage-green rounded-2xl p-8 text-center shadow-xl">
               <div className="flex items-center justify-center mb-6">
                 <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80"
-                  alt="Олександр - головний баріста"
-                  width={64}
-                  height={64}
+                  src={baristaRecommendation.barista.avatar}
+                  alt={`${baristaRecommendation.barista.name} - ${baristaRecommendation.barista.title}`}
+                  width={80}
+                  height={80}
+                  loading="lazy"
                   className="w-16 h-16 rounded-full mr-4 border-4 border-warm-white shadow-lg"
                 />
                 <div className="text-left">
                   <h5 className="text-xl font-serif font-semibold text-warm-white mb-1">
-                    Вибір Олександра
+                    Вибір {baristaRecommendation.barista.name}
                   </h5>
-                  <p className="text-warm-white/80">Головний баріста</p>
+                  <p className="text-warm-white/80">
+                    {baristaRecommendation.barista.title}
+                  </p>
                 </div>
               </div>
               <h6 className="text-2xl font-serif font-bold text-warm-white mb-3">
-                Карамельний макіато з морською сіллю
+                {baristaRecommendation.drink.name}
               </h6>
               <p className="text-warm-white/90 mb-4 leading-relaxed">
-                &ldquo;Цей тиждень я рекомендую спробувати наш авторський
-                карамельний макіато з щіпкою морської солі. Солодкість карамелі
-                в поєднанні з легкою солоністю створює неймовірно збалансований
-                смак, який підкреслює природну кислинку кави.&rdquo;
+                &ldquo;{baristaRecommendation.drink.description}&rdquo;
               </p>
               <div className="flex items-center justify-center gap-4">
-                <span className="text-3xl font-bold text-warm-white">₴85</span>
+                <span className="text-3xl font-bold text-warm-white">
+                  ₴{baristaRecommendation.drink.price}
+                </span>
                 <span className="bg-warm-white/20 text-warm-white px-4 py-2 rounded-full text-sm font-medium">
-                  Спеціальна ціна до неділі
+                  {baristaRecommendation.drink.specialOffer}
                 </span>
               </div>
             </div>
