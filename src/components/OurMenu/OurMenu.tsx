@@ -221,6 +221,53 @@ export const OurMenu = () => {
             ))}
           </div>
         </div>
+
+        <div className="mt-20">
+          <h4
+            className="text-3xl font-serif font-semibold text-sage-green mb-8 text-center"
+            data-testid="barista-recommendation-title"
+          >
+            Рекомендація бариста
+          </h4>
+
+          <div className="max-w-3xl mx-auto mb-16">
+            <div
+              className="bg-gradient-to-r from-warm-brown to-sage-green rounded-2xl p-8 text-center shadow-xl"
+              data-testid="barista-recommendation"
+            >
+              <div className="flex items-center justify-center mb-6">
+                <Image
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80"
+                  alt="Олександр - головний баріста"
+                  width={64}
+                  height={64}
+                  className="w-16 h-16 rounded-full mr-4 border-4 border-warm-white shadow-lg"
+                />
+                <div className="text-left">
+                  <h5 className="text-xl font-serif font-semibold text-warm-white mb-1">
+                    Вибір Олександра
+                  </h5>
+                  <p className="text-warm-white/80">Головний баріста</p>
+                </div>
+              </div>
+              <h6 className="text-2xl font-serif font-bold text-warm-white mb-3">
+                Карамельний макіато з морською сіллю
+              </h6>
+              <p className="text-warm-white/90 mb-4 leading-relaxed">
+                &ldquo;Цей тиждень я рекомендую спробувати наш авторський
+                карамельний макіато з щіпкою морської солі. Солодкість карамелі
+                в поєднанні з легкою солоністю створює неймовірно збалансований
+                смак, який підкреслює природну кислинку кави.&rdquo;
+              </p>
+              <div className="flex items-center justify-center gap-4">
+                <span className="text-3xl font-bold text-warm-white">₴85</span>
+                <span className="bg-warm-white/20 text-warm-white px-4 py-2 rounded-full text-sm font-medium">
+                  Спеціальна ціна до неділі
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </Container>
     </section>
   );
