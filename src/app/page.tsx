@@ -8,8 +8,8 @@ import { Gallery } from "@/components/Gallery/Gallery";
 import { Reviews } from "@/components/Reviews/Reviews";
 import { Footer } from "@/components/Footer/Footer";
 import { CoffeeQuiz } from "@/components/CoffeeQuiz/CoffeeQuiz";
-import { ToastContainer } from "react-toastify";
 import { CoffeeOrigins } from "@/components/CoffeeOrigins/CoffeeOrigins";
+import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   return (
