@@ -9,6 +9,7 @@ import { Reviews } from "@/components/Reviews/Reviews";
 import { Footer } from "@/components/Footer/Footer";
 import { CoffeeQuiz } from "@/components/CoffeeQuiz/CoffeeQuiz";
 import { ToastContainer } from "react-toastify";
+import { CoffeeOrigins } from "@/components/CoffeeOrigins/CoffeeOrigins";
 
 export default function Home() {
   return (
@@ -27,8 +28,9 @@ export default function Home() {
         <OurMenu />
         <About />
         <Gallery />
-        <Reviews />
         <CoffeeQuiz />
+        <CoffeeOrigins />
+        <Reviews />
       </main>
       <Footer />
 

@@ -15,7 +15,7 @@ export const AtmosphereCard = ({ className }: AtmosphereCardProps) => {
         </div>
       </div>
 
-      <h2 className="text-2xl md:text-3xl font-serif font-semibold text-warm-brown mb-6 text-center">
+      <h2 className="text-2xl md:text-3xl font-semibold text-warm-brown mb-6 text-center">
         Наша унікальна атмосфера
       </h2>
 

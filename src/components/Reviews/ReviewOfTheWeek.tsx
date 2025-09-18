@@ -5,7 +5,7 @@ import { StarRating } from "./StarRating";
 export const ReviewOfTheWeek = () => (
   <div className="mb-16">
     <div className="max-w-4xl mx-auto">
-      <h4 className="text-2xl font-serif font-semibold text-sage-green mb-8 text-center">
+      <h4 className="text-2xl font-semibold text-sage-green mb-8 text-center">
         Відгук тижня
       </h4>
       <div className="bg-gradient-to-r from-warm-brown to-sage-green rounded-2xl p-8 text-center shadow-xl relative overflow-hidden">
@@ -22,7 +22,7 @@ export const ReviewOfTheWeek = () => (
               className="w-16 h-16 rounded-full mr-4 border-4 border-warm-white shadow-lg"
             />
             <div className="text-left">
-              <h5 className="text-xl font-serif font-semibold text-warm-white mb-1">
+              <h5 className="text-xl font-semibold text-warm-white mb-1">
                 Марія П.
               </h5>
               <div className="flex items-center">

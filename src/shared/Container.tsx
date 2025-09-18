@@ -12,7 +12,8 @@ export const Container: React.FC<ContainerProps> = ({
   return (
     <div
       className={clsx(
-        "w-full mx-auto max-w-[375px] border border-red-500",
+        // "w-full mx-auto max-w-[375px] border border-red-500",
+        "w-full mx-auto max-w-[375px]",
         "md:max-w-[768px]",
         "lg:max-w-[1024px]",
         "xl:max-w-[1280px]",

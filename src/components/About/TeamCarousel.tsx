@@ -111,12 +111,9 @@ export const TeamCarousel = () => {
   };
 
   return (
-    <div
-      className="relative w-full max-w-7xl mx-auto"
-      data-testid="team-carousel"
-    >
+    <div className="relative w-full max-w-7xl mx-auto">
       <div className="text-center mb-12">
-        <h4 className="text-3xl font-serif font-bold text-sage-green mb-4">
+        <h4 className="text-3xl font-bold text-sage-green mb-4">
           Наша команда
         </h4>
         <p className="text-lg text-dark-text max-w-2xl mx-auto">
@@ -204,7 +201,7 @@ export const TeamCarousel = () => {
 
                       <div className="p-6">
                         <div className="text-center">
-                          <h5 className="text-xl font-serif font-bold text-warm-brown mb-2">
+                          <h5 className="text-xl font-bold text-warm-brown mb-2">
                             {member.name}
                           </h5>
                           <p className="text-sage-green font-medium text-sm mb-3">
@@ -232,7 +229,7 @@ export const TeamCarousel = () => {
                           <div className="w-16 h-16 bg-warm-brown rounded-full flex items-center justify-center mx-auto mb-4">
                             <Coffee className="w-8 h-8 text-white" />
                           </div>
-                          <h5 className="text-xl font-serif font-bold text-warm-brown">
+                          <h5 className="text-xl font-bold text-warm-brown">
                             {member.name}
                           </h5>
                         </div>

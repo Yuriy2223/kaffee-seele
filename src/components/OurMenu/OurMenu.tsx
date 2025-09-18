@@ -129,7 +129,7 @@ export const OurMenu = () => {
     <section id="menu" className="bg-cream/20">
       <Container className="px-4 py-10">
         <div className="text-center mb-10">
-          <h3 className="text-4xl md:text-5xl font-serif font-bold text-warm-brown mb-6">
+          <h3 className="text-4xl md:text-5xl font-bold text-warm-brown mb-6">
             Наше меню
           </h3>
           <p className="text-xl text-dark-text max-w-2xl mx-auto">
@@ -138,7 +138,7 @@ export const OurMenu = () => {
         </div>
 
         <div className="mb-14">
-          <h4 className="text-3xl font-serif font-semibold text-sage-green mb-12 text-center">
+          <h4 className="text-3xl font-semibold text-sage-green mb-12 text-center">
             Популярні кавові напої
           </h4>
 
@@ -160,7 +160,7 @@ export const OurMenu = () => {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
-                  <h5 className="text-xl font-serif font-semibold text-warm-brown mb-2">
+                  <h5 className="text-xl font-semibold text-warm-brown mb-2">
                     {item.name}
                   </h5>
                   <p className="text-dark-text mb-4">{item.description}</p>
@@ -177,7 +177,7 @@ export const OurMenu = () => {
         </div>
 
         <div>
-          <h4 className="text-3xl font-serif font-semibold text-sage-green mb-12 text-center">
+          <h4 className="text-3xl font-semibold text-sage-green mb-12 text-center">
             Фірмові десерти
           </h4>
 
@@ -197,7 +197,7 @@ export const OurMenu = () => {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   />
                 </div>
-                <h5 className="text-lg font-serif font-semibold text-warm-brown mb-2">
+                <h5 className="text-lg font-semibold text-warm-brown mb-2">
                   {item.name}
                 </h5>
                 <p className="text-sm text-dark-text mb-4">
@@ -212,7 +212,7 @@ export const OurMenu = () => {
         </div>
 
         <div className="mt-20">
-          <h4 className="text-3xl font-serif font-semibold text-sage-green mb-8 text-center">
+          <h4 className="text-3xl font-semibold text-sage-green mb-8 text-center">
             Рекомендація бариста
           </h4>
 
@@ -228,7 +228,7 @@ export const OurMenu = () => {
                   className="w-16 h-16 rounded-full mr-4 border-4 border-warm-white shadow-lg"
                 />
                 <div className="text-left">
-                  <h5 className="text-xl font-serif font-semibold text-warm-white mb-1">
+                  <h5 className="text-xl font-semibold text-warm-white mb-1">
                     Вибір {baristaRecommendation.barista.name}
                   </h5>
                   <p className="text-warm-white/80">
@@ -236,7 +236,7 @@ export const OurMenu = () => {
                   </p>
                 </div>
               </div>
-              <h6 className="text-2xl font-serif font-bold text-warm-white mb-3">
+              <h6 className="text-2xl font-bold text-warm-white mb-3">
                 {baristaRecommendation.drink.name}
               </h6>
               <p className="text-warm-white/90 mb-4 leading-relaxed">

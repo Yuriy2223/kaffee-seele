@@ -79,7 +79,7 @@ export const Reviews: React.FC = () => {
     <section id="reviews" className="bg-cream/20">
       <Container className="px-4 py-10">
         <div className="text-center mb-10">
-          <h3 className="text-4xl md:text-5xl font-serif font-bold text-warm-brown mb-6">
+          <h3 className="text-4xl md:text-5xl font-bold text-warm-brown mb-6">
             Відгуки наших гостей
           </h3>
           <div className="flex items-center justify-center gap-4 mb-4">

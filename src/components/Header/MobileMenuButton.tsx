@@ -17,7 +17,6 @@ export const MobileMenuButton = ({
       aria-label={isOpen ? "Закрити меню" : "Відкрити меню"}
       aria-expanded={isOpen}
       aria-controls="mobile-menu"
-      data-testid="mobile-menu-button"
     >
       <div className="relative w-6 h-6">
         <Menu
