@@ -41,7 +41,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
     resolver: yupResolver(schemaReviewForm),
     defaultValues: {
       name: "",
-      rating: 5,
+      rating: 0,
       text: "",
       photo: undefined,
     },
