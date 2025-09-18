@@ -1,7 +1,7 @@
 "use client";
 
 import { Container } from "@/shared/Container";
-import { useCallback, useState, useEffect } from "react";
+import { useRef, useCallback, useState, useEffect } from "react";
 import { Heart, Coffee } from "lucide-react";
 import { AnimatedLogo } from "./AnimatedLogo";
 
@@ -13,6 +13,7 @@ export const Hero = () => {
   const [showSecondLine, setShowSecondLine] = useState(false);
   const [showElements, setShowElements] = useState(false);
   const [showSteamHeart, setShowSteamHeart] = useState(false);
+  const headerRef = useRef<HTMLDivElement | null>(null);
   const firstLine = "Ласкаво просимо до";
   const secondLine = "'Кава для душі'";
   const BACKGROUND_IMAGE_URL =
@@ -51,7 +52,13 @@ export const Hero = () => {
   const scrollToSection = useCallback((sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const headerHeight = headerRef.current?.offsetHeight || 80;
+      const elementPosition = element.offsetTop - headerHeight;
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
     }
   }, []);
 
