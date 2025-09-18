@@ -6,7 +6,7 @@ import { AtmosphereCard } from "./AtmosphereCard";
 import { QuoteCard } from "./QuoteCard";
 import { Statistics } from "./Statistics";
 
-export const AtmosphereSection = () => {
+export const Atmosphere = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -18,11 +18,8 @@ export const AtmosphereSection = () => {
   }, []);
 
   return (
-    <section
-      id="atmosphere"
-      className="bg-gradient-to-b from-cream/20 to-warm-white/30 py-10 relative overflow-hidden"
-    >
-      <Container>
+    <section id="atmosphere" className="bg-cream/40">
+      <Container className="py-10 relative overflow-hidden">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div
             className={`transform transition-all duration-1000 ${

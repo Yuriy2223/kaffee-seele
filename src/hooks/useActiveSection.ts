@@ -15,13 +15,13 @@ export const useActiveSection = () => {
         });
       },
       {
-        threshold: 0.6,
-        rootMargin: "-20% 0px -20% 0px",
+        threshold: 0.3,
+        rootMargin: "-80px 0px -20% 0px",
       }
     );
 
     const sections = document.querySelectorAll(
-      '[id^="home"], [id^="menu"], [id^="about"], [id^="events"], [id^="coffee-quiz"], [id^="contact"]'
+      "#home, #menu, #about, #gallery, #coffee-quiz, #events, #reviews"
     );
 
     sections.forEach((section) => {

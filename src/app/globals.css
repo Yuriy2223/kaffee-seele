@@ -13,6 +13,7 @@
   --destructive: #f53b3b;
   --cream: #d9c9a6;
   --muted: #e0d9c9;
+  --muted-green: #90a9551a;
 }
 
 @theme inline {
@@ -22,22 +23,12 @@
   --color-sage-green: var(--sage-green);
   --color-warm-white: var(--warm-white);
   --color-destructive: var(--destructive);
+  --color-muted-green: var(--muted-green);
   --color-muted: var(--muted);
   --color-cream: var(--cream);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000000;
-    --foreground: #e8eaea;
-    --warm-brown: #7c6440;
-    --sage-green: #9caa9c;
-    --warm-white: #faf9f6;
-    --dark-text: #3b3b3b;
-  }
-} */
 
 html {
   box-sizing: border-box;
@@ -77,8 +68,6 @@ textarea {
   font-family: inherit;
   outline: none;
 }
-
-/* ============== кастомні анімації =============*/
 
 @layer utilities {
   .text-shadow-lg {

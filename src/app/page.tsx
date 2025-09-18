@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header/Header";
 import { Hero } from "@/components/Hero/Hero";
-import { AtmosphereSection } from "@/components/AtmosphereSection/AtmosphereSection";
+import { Atmosphere } from "@/components/Atmosphere/Atmosphere";
 import { CoffeeBackground } from "@/shared/CoffeeBackground";
 import { OurMenu } from "@/components/OurMenu/OurMenu";
 import { About } from "@/components/About/About";
@@ -9,6 +9,7 @@ import { Reviews } from "@/components/Reviews/Reviews";
 import { Footer } from "@/components/Footer/Footer";
 import { CoffeeQuiz } from "@/components/CoffeeQuiz/CoffeeQuiz";
 import { CoffeeOrigins } from "@/components/CoffeeOrigins/CoffeeOrigins";
+import { Events } from "@/components/Events/Events";
 import { ToastContainer } from "react-toastify";
 
 export default function Home() {
@@ -24,12 +25,13 @@ export default function Home() {
           spacing={400}
         />
         <Hero />
-        <AtmosphereSection />
+        <Atmosphere />
         <OurMenu />
         <About />
         <Gallery />
         <CoffeeQuiz />
         <CoffeeOrigins />
+        <Events />
         <Reviews />
       </main>
       <Footer />

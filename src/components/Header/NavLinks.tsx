@@ -15,9 +15,10 @@ export const NavLinks = ({
     { id: "home", label: "Головна" },
     { id: "menu", label: "Меню" },
     { id: "about", label: "Про нас" },
-    { id: "events", label: "Події" },
+    { id: "gallery", label: "Галерея" },
     { id: "coffee-quiz", label: "Тест кави" },
-    { id: "contact", label: "Контакти" },
+    { id: "events", label: "Події" },
+    { id: "reviews", label: "Відгуки" },
   ];
 
   return (

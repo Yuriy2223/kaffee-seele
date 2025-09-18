@@ -13,10 +13,17 @@ export const Header = () => {
   const activeSection = useActiveSection();
   const headerRef = useRef<HTMLElement>(null);
   const closeMenu = () => setIsMenuOpen(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const headerHeight = headerRef.current?.offsetHeight || 80;
+      const elementPosition = element.offsetTop - headerHeight;
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
     }
     closeMenu();
   };
@@ -58,7 +65,6 @@ export const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Блокування скролу
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
