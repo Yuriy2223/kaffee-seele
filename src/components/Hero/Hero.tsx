@@ -5,9 +5,6 @@ import { useCallback, useState, useEffect } from "react";
 import { Heart, Coffee } from "lucide-react";
 import { AnimatedLogo } from "./AnimatedLogo";
 
-const BACKGROUND_IMAGE_URL =
-  "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080";
-
 export const Hero = () => {
   const [displayText1, setDisplayText1] = useState("");
   const [displayText2, setDisplayText2] = useState("");
@@ -18,6 +15,8 @@ export const Hero = () => {
   const [showSteamHeart, setShowSteamHeart] = useState(false);
   const firstLine = "Ласкаво просимо до";
   const secondLine = "'Кава для душі'";
+  const BACKGROUND_IMAGE_URL =
+    "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080";
 
   useEffect(() => {
     if (currentIndex1 < firstLine.length) {
@@ -65,7 +64,7 @@ export const Hero = () => {
   }, [scrollToSection]);
 
   return (
-    <section id="home" className="bg-cream/30">
+    <section id="home" className="bg-cream/40">
       <Container className="flex items-center justify-center relative">
         <div
           className="h-[500px] md:h-[600px] lg:h-[800px] w-full flex flex-col items-center justify-center relative"
