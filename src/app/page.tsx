@@ -7,6 +7,7 @@ import { About } from "@/components/About/About";
 import { Gallery } from "@/components/Gallery/Gallery";
 import { Reviews } from "@/components/Reviews/Reviews";
 import { Footer } from "@/components/Footer/Footer";
+import { CoffeeQuiz } from "@/components/CoffeeQuiz/CoffeeQuiz";
 import { ToastContainer } from "react-toastify";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
         <About />
         <Gallery />
         <Reviews />
+        <CoffeeQuiz />
       </main>
       <Footer />
 
