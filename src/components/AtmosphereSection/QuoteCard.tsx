@@ -54,7 +54,7 @@ export const QuoteCard = () => {
         </div>
       </div>
 
-      <h3 className="text-2xl md:text-3xl font-serif font-semibold text-warm-brown mb-6 text-center">
+      <h3 className="text-2xl md:text-3xl font-semibold text-warm-brown mb-6 text-center">
         Мудрість в чашці кави
       </h3>
 

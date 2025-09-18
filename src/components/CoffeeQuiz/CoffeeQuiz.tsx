@@ -108,7 +108,7 @@ export const CoffeeQuiz = () => {
     >
       <Container className="px-4 py-10">
         <div className="text-center mb-16">
-          <h3 className="text-4xl md:text-5xl font-serif font-bold text-warm-brown mb-6">
+          <h3 className="text-4xl md:text-5xl font-bold text-warm-brown mb-6">
             Знайдіть свою ідеальну каву
           </h3>
           <p className="text-xl text-dark-text max-w-2xl mx-auto">
@@ -123,7 +123,7 @@ export const CoffeeQuiz = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-sage-green to-warm-brown rounded-full flex items-center justify-center mx-auto mb-6">
                 <Coffee className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-3xl font-serif font-bold text-warm-brown mb-4">
+              <h3 className="text-3xl font-bold text-warm-brown mb-4">
                 Ваша ідеальна кава!
               </h3>
               <p className="text-dark-text">
@@ -143,7 +143,7 @@ export const CoffeeQuiz = () => {
                 />
 
                 <div className="flex-1 text-center md:text-left">
-                  <h4 className="text-2xl font-serif font-bold text-warm-brown mb-2">
+                  <h4 className="text-2xl font-bold text-warm-brown mb-2">
                     {recommendation.name}
                   </h4>
                   <p className="text-dark-text mb-4 leading-relaxed">
@@ -183,7 +183,7 @@ export const CoffeeQuiz = () => {
             </div>
 
             <div className="mb-8">
-              <h5 className="font-serif font-semibold text-lg text-warm-brown mb-4">
+              <h5 className=" font-semibold text-lg text-warm-brown mb-4">
                 Характеристики:
               </h5>
               <div className="flex flex-wrap gap-2 mb-4">
@@ -197,7 +197,7 @@ export const CoffeeQuiz = () => {
                 ))}
               </div>
 
-              <h5 className="font-serif font-semibold text-lg text-sage-green mb-4">
+              <h5 className="font-semibold text-lg text-sage-green mb-4">
                 Ідеально для:
               </h5>
               <div className="flex flex-wrap gap-2">
@@ -224,10 +224,7 @@ export const CoffeeQuiz = () => {
             </div>
           </div>
         ) : (
-          <div
-            className="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-8"
-            data-testid="coffee-quiz"
-          >
+          <div className="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-8">
             <div className="mb-8">
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm font-medium text-dark-text">
@@ -263,7 +260,7 @@ export const CoffeeQuiz = () => {
                 <div className="w-16 h-16 bg-warm-brown/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Coffee className="w-8 h-8 text-warm-brown" />
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-warm-brown mb-4">
+                <h3 className="text-2xl font-bold text-warm-brown mb-4">
                   {currentQ.question}
                 </h3>
               </div>

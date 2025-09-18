@@ -9,10 +9,7 @@ export const ExistingReviews: React.FC<ExistingReviewsProps> = ({
   reviews,
 }) => (
   <div className="lg:col-span-2">
-    <h4
-      className="text-2xl font-serif font-semibold text-sage-green mb-8 text-center"
-      data-testid="existing-reviews-title"
-    >
+    <h4 className="text-2xl font-semibold text-sage-green mb-8 text-center">
       Що кажуть наші гості
     </h4>
     <div className="grid md:grid-cols-2 gap-6">

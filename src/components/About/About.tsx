@@ -62,7 +62,7 @@ export const About = () => {
           </div>
 
           <div className="mb-10">
-            <h4 className="text-2xl font-serif font-semibold text-sage-green mb-8 text-center">
+            <h4 className="text-2xl font-semibold text-sage-green mb-8 text-center">
               Кавові історії
             </h4>
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -71,7 +71,7 @@ export const About = () => {
                   <div className="w-12 h-12 bg-warm-brown/10 rounded-full flex items-center justify-center mr-4">
                     <Coffee className="w-6 h-6 text-warm-brown" />
                   </div>
-                  <h5 className="font-serif font-semibold text-lg text-warm-brown">
+                  <h5 className="font-semibold text-lg text-warm-brown">
                     Походження еспресо
                   </h5>
                 </div>
@@ -89,7 +89,7 @@ export const About = () => {
                   <div className="w-12 h-12 bg-sage-green/10 rounded-full flex items-center justify-center mr-4">
                     <Heart className="w-6 h-6 text-sage-green" />
                   </div>
-                  <h5 className="font-serif font-semibold text-lg text-sage-green">
+                  <h5 className="font-semibold text-lg text-sage-green">
                     Мистецтво латте-арту
                   </h5>
                 </div>
@@ -106,7 +106,7 @@ export const About = () => {
                   <div className="w-12 h-12 bg-warm-brown/10 rounded-full flex items-center justify-center mr-4">
                     <Leaf className="w-6 h-6 text-warm-brown" />
                   </div>
-                  <h5 className="font-serif font-semibold text-lg text-warm-brown">
+                  <h5 className="font-semibold text-lg text-warm-brown">
                     Етіопські корені
                   </h5>
                 </div>
@@ -123,7 +123,7 @@ export const About = () => {
                   <div className="w-12 h-12 bg-sage-green/10 rounded-full flex items-center justify-center mr-4">
                     <Users className="w-6 h-6 text-sage-green" />
                   </div>
-                  <h5 className="font-serif font-semibold text-lg text-sage-green">
+                  <h5 className="font-semibold text-lg text-sage-green">
                     Кава об&apos;єднує
                   </h5>
                 </div>
@@ -138,10 +138,7 @@ export const About = () => {
           </div>
 
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h4
-              className="text-2xl font-serif font-semibold text-sage-green mb-4"
-              data-testid="values-title"
-            >
+            <h4 className="text-2xl font-semibold text-sage-green mb-4">
               Наші цінності
             </h4>
             <div className="grid md:grid-cols-3 gap-8 text-left">
