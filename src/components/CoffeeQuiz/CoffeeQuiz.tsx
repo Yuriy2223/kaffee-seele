@@ -168,7 +168,7 @@ export const CoffeeQuiz = () => {
                   </div>
                 </div>
 
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-3xl font-bold text-sage-green mb-2">
                     ₴{recommendation.price}
                   </div>
@@ -178,7 +178,7 @@ export const CoffeeQuiz = () => {
                   >
                     Замовити
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
 
