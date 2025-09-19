@@ -66,7 +66,11 @@ export const PhotoUpload: React.FC<PhotoUploadProps> = ({
       }
 
       const data = await response.json();
-      onPhotoUpload(data.secure_url);
+      const optimizedUrl = data.secure_url.replace(
+        "/upload/",
+        "/upload/w_160,h_160,c_fill,g_auto,q_auto,f_auto/"
+      );
+      onPhotoUpload(optimizedUrl);
     } catch {
       setUploadError("Не вдалося завантажити фото. Спробуйте ще раз.");
     } finally {
@@ -96,7 +100,8 @@ export const PhotoUpload: React.FC<PhotoUploadProps> = ({
                 alt="Ваше фото"
                 width={80}
                 height={80}
-                className="rounded-full object-cover border-2 border-brown-200 shadow-md"
+                className="rounded-full object-cover border-2 border-brown-200 shadow-md aspect-square"
+                style={{ objectPosition: "center center" }}
               />
               {!disabled && !isUploading && (
                 <button
@@ -147,7 +152,7 @@ export const PhotoUpload: React.FC<PhotoUploadProps> = ({
         <div className="flex-1">
           {currentPhoto ? (
             <div className="space-y-1">
-              <p className="text-sm text-green-600 font-medium">
+              <p className="text-sm text-green-500 font-medium">
                 ✓ Фото завантажено
               </p>
               <button
