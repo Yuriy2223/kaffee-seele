@@ -208,6 +208,7 @@ export const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                     onClick={handleLinkClick}
                     className="bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 p-3 rounded-2xl text-white hover:scale-110 transition-transform duration-300 shadow-lg"
                     aria-label="Перейти на нашу сторінку в Instagram"
+                    title="Instagram"
                   >
                     <Instagram className="w-6 h-6" />
                   </a>
@@ -219,6 +220,7 @@ export const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                     onClick={handleLinkClick}
                     className="bg-gradient-to-br from-blue-400 to-blue-600 p-3 rounded-2xl text-white hover:scale-110 transition-transform duration-300 shadow-lg"
                     aria-label="Написати нам в Telegram"
+                    title="Telegram"
                   >
                     <Send className="w-6 h-6" />
                   </a>
@@ -230,6 +232,7 @@ export const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                     onClick={handleLinkClick}
                     className="bg-gradient-to-br from-blue-600 to-blue-800 p-3 rounded-2xl text-white hover:scale-110 transition-transform duration-300 shadow-lg"
                     aria-label="Перейти на нашу сторінку в Facebook"
+                    title="Facebook"
                   >
                     <Facebook className="w-6 h-6" />
                   </a>
