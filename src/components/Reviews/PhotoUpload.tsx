@@ -36,20 +36,25 @@ export const PhotoUpload: React.FC<PhotoUploadProps> = ({
       return;
     }
 
+    const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
+    const uploadPreset = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET;
+
+    if (!cloudName || !uploadPreset) {
+      setUploadError("Помилка конфігурації. Зверніться до адміністратора.");
+      return;
+    }
+
     setUploadError(null);
     setIsUploading(true);
 
     try {
       const formData = new FormData();
       formData.append("file", file);
-      formData.append(
-        "upload_preset",
-        process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET!
-      );
-      formData.append("folder", "reviews");
+      formData.append("upload_preset", uploadPreset);
+      formData.append("folder", uploadPreset);
 
       const response = await fetch(
-        `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload`,
+        `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`,
         {
           method: "POST",
           body: formData,
