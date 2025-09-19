@@ -57,7 +57,7 @@ export const coffeeMenu = [
     description: "Ідеальне поєднання кави та шоколаду з вершковою піною",
     price: 75,
     image:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
     icon: "cookie",
   },
   {
@@ -95,11 +95,11 @@ export const dessertsMenu = [
     description: "З лісовими ягодами",
     price: 75,
     image:
-      "https://images.unsplash.com/photo-1567306301408-9b74779a11af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+      "https://images.unsplash.com/photo-1524351199678-941a58a3df50?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
   },
   {
     id: "macarons",
-    name: "Французькі макарони",
+    name: "Французькі макаруни",
     description: "Набір з 6 смаків",
     price: 90,
     image:
