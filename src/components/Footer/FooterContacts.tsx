@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { contactInfo } from "@/constants/contactInfo";
 
 export const FooterContacts = () => {
   return (
@@ -15,29 +16,24 @@ export const FooterContacts = () => {
             </div>
             <div className="min-w-0 flex-1">
               <p className="text-warm-white font-semibold text-sm sm:text-base">
-                вул. Шевченка, 25
+                {contactInfo.address}
               </p>
               <p className="text-warm-white/80 text-xs sm:text-sm">
-                м. Київ, 01001
-              </p>
-              <p className="text-warm-white/60 text-xs mt-1">
-                5 хв від метро &quot;Золоті Ворота&quot;
+                {contactInfo.city}
               </p>
             </div>
           </div>
           <div className="flex justify-center">
-            <button
-              onClick={() =>
-                window.open(
-                  "https://maps.google.com/?q=вул.+Шевченка,+25,+Київ",
-                  "_blank"
-                )
-              }
+            <a
+              href={contactInfo.mapUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Переглянути адресу на карті: ${contactInfo.address}, ${contactInfo.city}`}
               className="w-full md:w-2xs bg-sage-green text-warm-white px-3 py-2 rounded-lg font-medium hover:bg-sage-green/90 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 group text-sm"
             >
               <MapPin className="w-4 h-4 group-hover:scale-110 transition-transform duration-200" />
               <span>Знайти нас</span>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -47,9 +43,14 @@ export const FooterContacts = () => {
               <Phone className="text-warm-white w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div className="min-w-0">
-              <p className="text-warm-white font-semibold text-sm sm:text-base">
-                +38 (044) 123-45-67
-              </p>
+              <a
+                href={`tel:${contactInfo.phone?.replace(/[^\d+]/g, "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-warm-white font-semibold text-sm sm:text-base"
+              >
+                {contactInfo.phone}
+              </a>
               <p className="text-warm-white/60 text-xs">
                 Приймаємо дзвінки щодня
               </p>
@@ -63,9 +64,14 @@ export const FooterContacts = () => {
               <Mail className="text-warm-white w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div className="min-w-0">
-              <p className="text-warm-white font-semibold text-sm sm:text-base break-all">
-                hello@kavadlyadushi.ua
-              </p>
+              <a
+                href={`mailto:${contactInfo.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-warm-white font-semibold text-sm sm:text-base break-all"
+              >
+                {contactInfo.email}
+              </a>
             </div>
           </div>
         </div>
@@ -77,7 +83,7 @@ export const FooterContacts = () => {
             </div>
             <div className="min-w-0">
               <p className="text-warm-white font-semibold text-sm sm:text-base">
-                Пн-Нд: 07:00 - 22:00
+                {contactInfo.workHoursWeek}
               </p>
               <p className="text-warm-white/60 text-xs">
                 Працюємо без вихідних

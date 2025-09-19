@@ -17,7 +17,6 @@ export const FooterSocial = () => {
           <a
             href={contactInfo.instagram}
             className="bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg p-3 text-white hover:shadow-lg hover:scale-105 transition-all duration-300 group flex items-center justify-center space-x-2"
-            title="Instagram"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Перейти на нашу сторінку в Instagram"
@@ -29,7 +28,6 @@ export const FooterSocial = () => {
           <a
             href={contactInfo.facebook}
             className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-3 text-white hover:shadow-lg hover:scale-105 transition-all duration-300 group flex items-center justify-center space-x-2"
-            title="Facebook"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Перейти на нашу сторінку в Facebook"
@@ -41,7 +39,6 @@ export const FooterSocial = () => {
           <a
             href={contactInfo.telegram}
             className="bg-gradient-to-r from-sky-500 to-blue-500 rounded-lg p-3 text-white hover:shadow-lg hover:scale-105 transition-all duration-300 group flex items-center justify-center space-x-2"
-            title="Telegram"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Написати нам в Telegram"
