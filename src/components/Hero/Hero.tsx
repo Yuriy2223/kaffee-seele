@@ -3,7 +3,8 @@
 import { Container } from "@/shared/Container";
 import { useRef, useCallback, useState, useEffect } from "react";
 import { Heart, Coffee } from "lucide-react";
-import { AnimatedLogo } from "./AnimatedLogo";
+import { AnimatedLogo } from "../Logo/AnimatedLogo";
+import { ContactModal } from "./ContactModal";
 
 export const Hero = () => {
   const [displayText1, setDisplayText1] = useState("");
@@ -13,6 +14,7 @@ export const Hero = () => {
   const [showSecondLine, setShowSecondLine] = useState(false);
   const [showElements, setShowElements] = useState(false);
   const [showSteamHeart, setShowSteamHeart] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const headerRef = useRef<HTMLDivElement | null>(null);
   const firstLine = "Ласкаво просимо до";
   const secondLine = "'Кава для душі'";
@@ -67,8 +69,8 @@ export const Hero = () => {
   }, [scrollToSection]);
 
   const handleContactClick = useCallback(() => {
-    scrollToSection("contact");
-  }, [scrollToSection]);
+    setIsContactModalOpen(true);
+  }, []);
 
   return (
     <section id="home" className="bg-cream/40">
@@ -169,6 +171,11 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
+
+      <ContactModal
+        isOpen={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
+      />
     </section>
   );
 };
