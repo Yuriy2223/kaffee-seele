@@ -5,6 +5,7 @@ import { useRef, useCallback, useState, useEffect } from "react";
 import { Heart, Coffee } from "lucide-react";
 import { AnimatedLogo } from "../Logo/AnimatedLogo";
 import { ContactModal } from "./ContactModal";
+import { CoffeeBackground } from "@/shared/CoffeeBackground";
 
 export const Hero = () => {
   const [displayText1, setDisplayText1] = useState("");
@@ -73,7 +74,8 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="bg-cream/40">
+    <section id="home" className="reltive bg-cream/40">
+      <CoffeeBackground />
       <Container className="flex items-center justify-center relative">
         <div
           className="h-[500px] md:h-[600px] lg:h-[800px] w-full flex flex-col items-center justify-center relative"

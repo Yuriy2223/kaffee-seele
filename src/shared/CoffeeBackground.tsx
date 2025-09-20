@@ -11,7 +11,7 @@ interface CoffeeBackgroundProps {
 export const CoffeeBackground = ({
   backgroundColor = "transparent",
   iconColor = "#7c6440",
-  opacity = 10,
+  opacity = 5,
   size = 24,
   spacing = 300,
 }: CoffeeBackgroundProps) => {

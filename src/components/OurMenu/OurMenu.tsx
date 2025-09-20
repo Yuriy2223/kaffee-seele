@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/shared/Container";
 import { Coffee, Heart, Snowflake, Star, Cookie } from "lucide-react";
+import { CoffeeBackground } from "@/shared/CoffeeBackground";
 
 const iconMap = {
   coffee: Coffee,
@@ -126,7 +127,8 @@ export const baristaRecommendation = {
 
 export const OurMenu = () => {
   return (
-    <section id="menu" className="bg-cream/20">
+    <section id="menu" className="relative bg-cream/20">
+      <CoffeeBackground />
       <Container className="px-4 py-10">
         <div className="text-center mb-10">
           <h3 className="text-4xl md:text-5xl font-bold text-warm-brown mb-6">

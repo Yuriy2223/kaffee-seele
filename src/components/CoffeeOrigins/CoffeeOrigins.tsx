@@ -4,6 +4,7 @@ import { useState, useMemo, useCallback } from "react";
 import { Coffee } from "lucide-react";
 import { Container } from "@/shared/Container";
 import { coffeeOrigins } from "./ConstCoffeeOrigins";
+import { CoffeeBackground } from "@/shared/CoffeeBackground";
 
 export const CoffeeOrigins = () => {
   const [selectedOrigin, setSelectedOrigin] = useState<number | null>(null);
@@ -33,10 +34,10 @@ export const CoffeeOrigins = () => {
   return (
     <section
       id="coffee-origins"
-      className="bg-white"
-      role="main"
+      className="relative bg-white"
       aria-label="Карта походження нашої кави"
     >
+      <CoffeeBackground />
       <Container className="px-4 py-10">
         <div className="text-center mb-10">
           <h3 className="text-4xl md:text-5xl font-bold text-warm-brown mb-6">
