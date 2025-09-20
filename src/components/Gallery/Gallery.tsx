@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { Container } from "@/shared/Container";
+import { CoffeeBackground } from "@/shared/CoffeeBackground";
 
 const galleryImages = [
   {
@@ -148,7 +149,8 @@ export const Gallery = () => {
   }, []);
 
   return (
-    <section id="gallery" className="bg-cream/40">
+    <section id="gallery" className="relative bg-cream/40">
+      <CoffeeBackground />
       <Container className="px-4 py-10">
         <div className="text-center mb-16">
           <h3 className="text-4xl md:text-5xl font-bold text-warm-brown mb-6">

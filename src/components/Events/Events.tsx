@@ -5,6 +5,7 @@ import { Calendar, Clock, Users } from "lucide-react";
 import { Container } from "@/shared/Container";
 import { EventsModal } from "./EventsModal";
 import { categoryIcons, categoryNames, upcomingEvents } from "./ConstEvents";
+import { CoffeeBackground } from "@/shared/CoffeeBackground";
 
 export interface Event {
   id: number;
@@ -46,7 +47,8 @@ export const Events = () => {
 
   return (
     <>
-      <section id="events" className="bg-sage-green/10">
+      <section id="events" className="relative bg-sage-green/10">
+        <CoffeeBackground />
         <Container className="px-4 py-10">
           <div className="text-center mb-16">
             <h3 className="text-4xl md:text-5xl font-bold text-warm-brown mb-6">

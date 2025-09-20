@@ -5,6 +5,7 @@ import { Container } from "@/shared/Container";
 import { AtmosphereCard } from "./AtmosphereCard";
 import { QuoteCard } from "./QuoteCard";
 import { Statistics } from "./Statistics";
+import { CoffeeBackground } from "@/shared/CoffeeBackground";
 
 export const Atmosphere = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,8 +19,9 @@ export const Atmosphere = () => {
   }, []);
 
   return (
-    <section id="atmosphere" className="bg-cream/40">
-      <Container className="py-10 relative overflow-hidden">
+    <section id="atmosphere" className="relative bg-cream/40">
+      <CoffeeBackground />
+      <Container className="py-10 overflow-hidden">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div
             className={`transform transition-all duration-1000 ${

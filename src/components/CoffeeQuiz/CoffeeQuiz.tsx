@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Coffee, ArrowRight, RotateCcw } from "lucide-react";
 import { coffeeRecommendations, quizQuestions } from "./ConstCoffeeQuiz";
 import { Container } from "@/shared/Container";
+import { CoffeeBackground } from "@/shared/CoffeeBackground";
 
 export interface QuizQuestion {
   id: number;
@@ -104,8 +105,9 @@ export const CoffeeQuiz = () => {
   return (
     <section
       id="coffee-quiz"
-      className="bg-gradient-to-r from-sage-green/10 to-warm-brown/10"
+      className="relative bg-gradient-to-r from-sage-green/10 to-warm-brown/10"
     >
+      <CoffeeBackground />
       <Container className="px-4 py-10">
         <div className="text-center mb-16">
           <h3 className="text-4xl md:text-5xl font-bold text-warm-brown mb-6">

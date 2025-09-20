@@ -8,6 +8,7 @@ import { ReviewForm } from "./ReviewForm";
 import { existingReviews } from "./const";
 import { toast } from "react-toastify";
 import { Container } from "@/shared/Container";
+import { CoffeeBackground } from "@/shared/CoffeeBackground";
 
 export interface Review {
   id: number;
@@ -76,7 +77,8 @@ export const Reviews: React.FC = () => {
   );
 
   return (
-    <section id="reviews" className="bg-cream/20">
+    <section id="reviews" className="relative bg-cream/20">
+      <CoffeeBackground />
       <Container className="px-4 py-10">
         <div className="text-center mb-10">
           <h3 className="text-4xl md:text-5xl font-bold text-warm-brown mb-6">

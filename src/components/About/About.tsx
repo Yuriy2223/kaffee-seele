@@ -4,10 +4,12 @@ import { Leaf, Heart, Users, Coffee } from "lucide-react";
 import Image from "next/image";
 import { Container } from "@/shared/Container";
 import { TeamCarousel } from "./TeamCarousel";
+import { CoffeeBackground } from "@/shared/CoffeeBackground";
 
 export const About = () => {
   return (
-    <section id="about" className="bg-cream/10">
+    <section id="about" className="relative bg-cream/10">
+      <CoffeeBackground />
       <Container className="px-4 py-10">
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-4xl md:text-5xl font-bold text-warm-brown mb-8">
