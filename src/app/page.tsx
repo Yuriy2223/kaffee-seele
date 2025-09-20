@@ -15,26 +15,22 @@ import { ToastContainer } from "react-toastify";
 export default function Home() {
   return (
     <>
-      <Header />
-      <main>
-        <CoffeeBackground
-          backgroundColor="transparent"
-          iconColor="#7c6440"
-          opacity={5}
-          size={30}
-          spacing={400}
-        />
-        <Hero />
-        <Atmosphere />
-        <OurMenu />
-        <About />
-        <Gallery />
-        <CoffeeQuiz />
-        <CoffeeOrigins />
-        <Events />
-        <Reviews />
-      </main>
-      <Footer />
+      <CoffeeBackground
+        backgroundColor="transparent"
+        iconColor="#7c6440"
+        opacity={5}
+        size={30}
+        spacing={400}
+      />
+      <Hero />
+      <Atmosphere />
+      <OurMenu />
+      <About />
+      <Gallery />
+      <CoffeeQuiz />
+      <CoffeeOrigins />
+      <Events />
+      <Reviews />
 
       <ToastContainer
         position="top-right"

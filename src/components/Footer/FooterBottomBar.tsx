@@ -4,7 +4,7 @@ export const FooterBottomBar = () => {
       <div className="flex flex-col items-center gap-6 md:justify-center md:flex-row-reverse md:gap-10">
         <div className="flex flex-col items-center md:flex-row gap-3 md:gap-6">
           <a
-            href="#"
+            href="privacy-policy"
             className="text-warm-white/80 hover:text-sage-green transition-colors duration-200 text-xs sm:text-sm font-medium relative group"
           >
             Політика конфіденційності
@@ -12,7 +12,7 @@ export const FooterBottomBar = () => {
           </a>
           <span className="text-warm-white/80 max-md:hidden">|</span>
           <a
-            href="#"
+            href="terms-of-use"
             className="text-warm-white/80 hover:text-sage-green transition-colors duration-200 text-xs sm:text-sm font-medium relative group"
           >
             Умови використання
