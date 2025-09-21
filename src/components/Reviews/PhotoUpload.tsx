@@ -124,12 +124,12 @@ export const PhotoUpload: React.FC<PhotoUploadProps> = ({
               <div
                 className={`w-20 h-20 rounded-full flex items-center justify-center border-2 border-dashed transition-colors ${
                   isUploading
-                    ? "bg-blue-50 border-blue-300"
+                    ? "bg-blue-50 border-warm-brown/30"
                     : "bg-gray-50 border-gray-300 hover:bg-gray-100 hover:border-gray-400"
                 }`}
               >
                 {isUploading ? (
-                  <div className="w-6 h-6 border-2 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+                  <div className="w-6 h-6 border-2 border-warm-brown border-t-transparent rounded-full animate-spin"></div>
                 ) : (
                   <Camera className="w-8 h-8 text-gray-400" />
                 )}

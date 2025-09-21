@@ -68,7 +68,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
         Залишити відгук
       </h4>
 
-      <form onSubmit={handleSubmit(onFormSubmit)} className="space-y-6">
+      <form onSubmit={handleSubmit(onFormSubmit)} className="space-y-5">
         <PhotoUpload
           onPhotoUpload={handlePhotoUpload}
           currentPhoto={photoUrl}
@@ -116,16 +116,20 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Оцінка *
           </label>
-          <Controller
-            name="rating"
-            control={control}
-            render={({ field }) => (
-              <StarRating
-                rating={field.value}
-                onRatingChange={field.onChange}
-              />
-            )}
-          />
+          <div className="flex items-center justify-center">
+            <Controller
+              name="rating"
+              control={control}
+              render={({ field }) => (
+                <StarRating
+                  size="w-8 h-8"
+                  spacing="gap-x-6"
+                  rating={field.value}
+                  onRatingChange={field.onChange}
+                />
+              )}
+            />
+          </div>
           <p className="text-red-500 text-sm mt-1 h-5">
             {errors.rating?.message || ""}
           </p>

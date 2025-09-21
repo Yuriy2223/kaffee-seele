@@ -3,6 +3,7 @@ import { Star } from "lucide-react";
 interface StarRatingProps {
   rating: number;
   size?: string;
+  spacing?: string;
   onRatingChange?: (rating: number) => void;
 }
 
@@ -10,9 +11,14 @@ export const StarRating: React.FC<StarRatingProps> = ({
   rating,
   onRatingChange,
   size = "w-5 h-5",
+  spacing,
 }) => {
   return (
-    <div className="flex" role="img" aria-label={`Оцінка: ${rating} з 5 зірок`}>
+    <div
+      className={`flex ${spacing ?? ""}`}
+      role="img"
+      aria-label={`Оцінка: ${rating} з 5 зірок`}
+    >
       {Array.from({ length: 5 }, (_, i) => {
         const starValue = i + 1;
         const isActive = starValue <= rating;
