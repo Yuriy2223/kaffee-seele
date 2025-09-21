@@ -7,7 +7,7 @@ type DesktopNavProps = {
 
 export const DesktopNav = ({ onClick, activeSection }: DesktopNavProps) => {
   return (
-    <div className="hidden lg:flex items-center space-x-8">
+    <div className="hidden lg:flex lg:space-x-5 items-center xl:space-x-8">
       <NavLinks
         onClick={onClick}
         activeSection={activeSection}

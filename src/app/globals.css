@@ -27,7 +27,6 @@
   --color-muted: var(--muted);
   --color-cream: var(--cream);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 html {
@@ -70,6 +69,10 @@ textarea {
 }
 
 @layer utilities {
+  .animate-loading {
+    animation: loading 2s linear infinite;
+  }
+
   .text-shadow-lg {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   }
@@ -149,5 +152,14 @@ textarea {
   100% {
     opacity: 1;
     transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(300%);
   }
 }
